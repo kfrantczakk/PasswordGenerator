@@ -2,7 +2,7 @@
 
 
 body{
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,4 +10,57 @@ body{
     margin: 0;
     background-color: #1B1B1E;
     color: #D8DBE2;
+}
+
+.container{
+
+    background-color: #373F51;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(169, 188, 208, 0.2);
+    width: 500px;
+}
+
+h1{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+input[type="number"]{
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button{
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #D8DBE2;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
 }
