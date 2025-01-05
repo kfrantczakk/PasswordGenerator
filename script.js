@@ -6,6 +6,7 @@ var includeNumbers = document.getElementById('numbers');
 var includeSpecial = document.getElementById('specials');
 var passwordOutput = document.getElementById('password-otp');
 var generatePasswordButton = document.getElementById('generate-password');
+var copyPasswordButton = document.getElementById('copy');
 // GENEROWANIE HASŁA FUNKCJA
 function generatePassword() {
     var length = parseInt(passwordLengthInput.value);
@@ -38,5 +39,16 @@ generatePasswordButton.addEventListener('click', function () {
     var password = generatePassword();
     if (password) {
         passwordOutput.value = password;
+    }
+});
+// KOPIOWANIE HASŁA
+copyPasswordButton.addEventListener('click', function () {
+    var password = passwordOutput.value;
+    if (password) {
+        navigator.clipboard.writeText(password).then(function () {
+            alert('Hasło skopiowane do schowka!');
+        }).catch(function (err) {
+            console.error('Błąd kopiowania', err);
+        });
     }
 });
